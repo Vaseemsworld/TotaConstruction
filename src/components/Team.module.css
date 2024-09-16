@@ -1,0 +1,97 @@
+
+.teamSection {
+    box-sizing: border-box;
+    color: var(--text-color-dark);
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 10px;
+}
+.teamContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.sectiontitle{
+    border-left: 2px solid var(--primary-color);
+    margin: 0 0 10px 0;
+    padding: 0 0 0 10px;
+    color: var(--secondary-color);
+    display: inline-block;
+}
+.sectionTitleText{
+    font-size: 18px;
+}
+.sectionHeading{
+    margin: 0;
+    padding: 0px 0 20px 0 ;
+}
+.sectionHeadingText{
+    font-size: 29px;
+    font-weight: bold;
+}
+.teamMembers{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.member{
+    max-width: 350px;
+    margin: 10px 20px 10px 10px;
+    background-color: #f2f3f6;
+    border-bottom: 8px solid transparent;
+    transition: border-bottom 0.5s ease;
+}
+.member:hover{
+    border-bottom: 8px solid var(--primary-color);
+}
+.memberImg{
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+.memberImg img{
+    height: 100%;
+    width: 100%;
+}
+.memberContent{
+    padding: 25px 10px 25px 10px;
+}
+.memberName{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.memberJobTitle{
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    padding: 10px 0;
+    color: var(--text-color-fade);
+}
+.memberSocial .icon{
+    display: inline-block;
+}
+.memberSocial .icon a{
+    display: inline-block;
+    color: var(--text-color);
+    padding: 13px 14px 10px;
+    margin: 10px;
+    color: var(--text-color-light);
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transition:  background-color 0.3s ease;
+}
+.memberSocial .icon a:hover{
+    background-color: var(--text-color-dark);
+}
+
+@media (min-width:1024px){
+    .sectionHeadingText{
+        font-size: 40px;
+    }
+}

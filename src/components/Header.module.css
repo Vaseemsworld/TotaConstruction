@@ -1,0 +1,208 @@
+.navContact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+.navContact .item {
+    padding: 0;
+    margin: 0;
+}
+.navContact .navItems, .navContact ul {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.navContact ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navContact ul li {
+    color: var(--secondary-color);
+    list-style: none;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.navContact ul li i {
+    color: var(--primary-color);
+    padding: 5px 5px 0 0;
+}
+
+.navContact .navButton {
+    height: 40px;
+    width:200px;
+    background: var(--primary-color);
+    transition: background-color 0.4s ease, width 0.4s ease;
+    margin-left: auto;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navContact .navButton:hover {
+    background-color: #000;
+}
+
+.navContact .navButton .btnContent {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navContact .navButton .btnContent .icon {
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* main navbar */
+.navMain {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 0 30px 0 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.navMain .logoImg {
+    background-color: var(--background-color);
+    height: 100px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navMain .logo {
+    height: 90px;
+}
+.navMain .navItems {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navItems.open {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+    max-height: 0;
+}
+
+.navMain ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+.navMain ul li a {
+    font-size: 18px;
+    color: #4a4949;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.navMain ul li a.active,.navMain ul li a:hover {
+    color: var(--primary-color);
+}
+
+.navMain .navToggle {
+    margin-right: 15px;
+    padding: 13px 14px 12px;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    display: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.navToggle:hover{
+    background-color: var(--text-color);
+}
+@media (max-width: 768px) {
+    .navContact {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px 20px;
+    }
+    
+    .navContact .navButton {
+        display: none;
+    }
+
+    .navContact .navItems,
+    .navContact ul {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        color: var(--text-color-light);
+    }
+
+    .navMain .navItems {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+        width: 100%;
+        height: auto;
+        color: #8e8e8e;
+        background-color: var(--background-color);
+        position: absolute;
+        top: 100px;
+        z-index: 1000;
+        border: 1px solid #b5b5b5;
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+    }
+    .navMain .navItems.open {
+        max-height: 400px;
+    }
+    .navMain ul {
+        padding: 10px 0;
+    }
+    .navMain ul li {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+        border: 1px solid #cfcfcf;
+    }
+    .navMain .navToggle {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .navContact {
+        padding: 10px;
+    }
+    .navMain {
+        padding: 0;
+    }
+    .navMain .logoImg {
+        width: 200px;
+    }
+}
+@media (min-width:1024px){
+    .navContact ul li{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,105 @@
+:root{
+    --primary-color:#ff6620;
+    --text-color-light:#ffffff;
+    --text-color-dark:#000;
+    --text-color-grey:grey;
+}
+.services{
+    background-color: #f2f3f6;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 10px;
+    box-sizing: border-box;
+}
+.divider {
+    overflow: hidden;
+    margin: 10px 40px;
+    color: rgba(0,0,0,0.3);
+}
+
+.sectionHeadings{
+    text-align: center;
+}
+.sectionTitle{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing:2px;
+    color: var(--text-color-grey);
+    text-transform: uppercase;
+}
+.sectionTitle .sectionTitleText{
+    border-left: 2px solid var(--primary-color);
+    padding-left: 10px;
+    margin: 0 0 10px 0;
+    display: inline-block;
+}
+.sectionHeadingText{
+    font-weight: bold;
+    font-size: 29px;
+    margin: 0 0 20px 0;
+    color: var(--text-color-dark);
+}
+.serviceContent{
+    padding: 10px;
+}
+
+.serviceColumns{
+    display: flex;
+    justify-content: space-evenly;
+}
+.serviceColumn{
+    max-width: 400px;
+    margin: 10px 20px 10px 10px;
+    background-color: #fff;
+    overflow: hidden;
+    width: 33.333%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease;
+}
+.serviceColumn:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+.serviceColumn .columnImg{
+    height: auto;
+    width: 100%;
+    padding: 0;margin: 0;
+    display: inline-block;
+}
+.serviceColumn .columnImg img{
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1.5/1;
+}
+.serviceColumn .columnData{
+    padding: 25px 10px 25px 10px;
+}
+.serviceColumn h2{
+    font-weight: 400;
+}
+.columnData .columnHeading{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.columnData .columnDescription{
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    padding: 10px 0;
+    color: var(--text-color-grey);
+}
+
+@media (max-width:767px){
+    .serviceColumns{
+        flex-direction: column;
+        align-items: center;
+    }
+    .serviceColumn{
+        width: 100%;
+        margin: 30px 10px;
+    }
+}

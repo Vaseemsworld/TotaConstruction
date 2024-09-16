@@ -1,0 +1,299 @@
+:root{
+    --primary-color:#ff6620;
+    --text-color-light:#ffffff;
+    --text-color-dark:#000;
+    --text-color-fade:#8C909E;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 10px;
+    box-sizing: border-box;
+}
+.divider {
+    overflow: hidden;
+    margin: 10px 40px;
+    color: #ffffff;
+}
+/* intro */
+
+.introSection .container{
+    color: var(--text-color-dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.introSection .introImg{
+    height: auto;
+    max-width: 100%;
+    min-height: 300px;
+    min-width: 300px;
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px 50px 10px 10px;
+    max-width: 500px;
+    max-height: 500px;
+    text-align: center;
+}
+.introSection .introImg img{
+    height: auto;
+    width: 100%;
+    display: inline-block;
+}
+.sectionTitle{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing:2px;
+    color: var(--text-color-fade);
+    text-transform: uppercase;
+}
+.sectionTitle .sectionTitleText{
+    border-left: 2px solid var(--primary-color);
+    padding-left: 10px;
+    margin: 0 0 10px 0;
+    display: inline-block;
+}
+.sectionHeadingText{
+    font-weight: bold;
+    font-size: 29px;
+    margin: 0 0 20px 0;
+    color: var(--text-color-dark);
+}
+.introSection .description{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--text-color-fade);
+}
+.introSection .descriptiontext{
+    margin: 0 0 20px 0;
+}
+
+/* records */
+
+.recordSection{
+    background-color: #f2f3f6;
+    color: var(--text-color-dark);
+    box-sizing: border-box;
+}
+
+.recordSection .container{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.recordSection .item{
+    position: relative;
+    min-height: 1px;
+    display: flex;
+}
+.recordSection .box{
+    padding: 10px 25px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.recordSection .box1Content{
+    text-align: left;
+    padding: 60px 30px;
+    background-color: var(--primary-color);
+}
+.recordSection .box1Content .boxHeading{
+    padding: 0;
+    margin: 0;
+    color: var(--text-color-light);
+    text-transform: uppercase;
+    line-height: 1.3;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.recordSection .boxItem1{
+    /* text-align: center; */
+    position: relative;
+    margin-bottom: 12px;
+    width: 100%;
+}
+.recordSection .boxItem1 .boxImage{
+    margin: 0px 0px -5px 0;
+}
+.recordSection .boxItem2{
+    width: auto;
+    margin: 0 0 10px 0;
+    padding: 0;
+    display: block;
+}
+.recordSection .item2Text{
+    font-size: 40px;
+    font-weight: 700;
+}
+.recordSection .boxItem3{
+    width: 100%;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+}
+.recordSection .boxItem3 .item3InnerText{
+    margin: 0;
+    padding-left: 10px;
+    border-left: 2px solid var(--primary-color);
+    display: inline-block;
+}
+
+/* ownerSection */
+.ownerSection{
+    margin-top: 50px;
+    background-image: url("images/jcb_blue_sky.jpg");
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    background-color: #161a2b;
+    background-position: center;
+    background-size: cover;
+}
+.ownerSection .ownerSectionContent{
+    background-color: rgba(0,0,0,0.5);
+    padding: 145px 0 120px 0;
+    max-width: 100%;
+}
+.ownerSection .container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+    padding: 0 20px; 
+}
+.ownerSection .heading, .ownerSection .description{
+    width: 50%;
+    height: 100%;
+    padding: 15px;
+}
+.ownerSection .heading{
+    font-size: 40px;
+}
+.ownerSection .headingText{
+    font-weight: bold;
+}
+.ownerSection .description{
+    font-size: 22px;
+}
+.ownerSection .descriptionText{
+    margin: 0 0 20px 0;
+    border-left: 2px solid var(--primary-color);
+    padding-left: 25px;
+}
+
+/* feedbackSection */
+.feedback{
+    text-align: center;
+}
+.feedbackColumns{
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.feedbackColumn{
+    margin: 20px 10px;
+    padding: 10px;
+    text-align: left;
+    background-color: #f2f3f6;
+    width: 33.333%;
+    min-height: 300px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.5s ease;
+}
+.feedbackColumn:hover{
+    border-bottom: 4px solid var(--primary-color);
+}
+
+
+.feedbackColumn .personImg{
+    height: auto;
+    width: auto;
+    margin: 0 0 20px 0;
+}
+.feedbackColumn img{
+    height: 90px;
+    width: auto;
+    border-radius: 50%;
+    background-color: red;
+}
+.feedbackData{
+    margin: 0 0 20px 0;
+}
+.feedbackDataText{
+    color: var(--text-color-fade);
+    border-left: 4px solid var(--primary-color);
+    padding-left: 15px;
+}
+.feedbackColumn .personInfo .name{
+    padding: 0 0 5px 0;
+}
+.feedbackColumn .personInfo .nameText{
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.feedbackColumn .personInfo .serviceText{
+    font-size: 16px;
+}
+
+
+@media (max-width:767px){
+    .section{
+        margin: auto;
+    }
+    .introSection .container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .ownerSection .container{
+        flex-direction: column;
+    }
+    .ownerSection .heading{
+        font-size: 22px;
+        width: 100%;
+    }
+    .ownerSection .description{
+        font-size: 16px;
+        width: 100%;
+    }
+    .feedbackColumns{
+        flex-direction: column;
+    }
+    .feedbackColumn{
+        width: 100%;
+    }
+    .feedbackData{
+        width: 70%;
+    }
+
+}
+
+@media (max-width:480px){
+    .feedbackData{
+        width: 100%;
+    }
+}
+@media (max-width:1024px){
+    .container{
+        max-width: 1024px;
+    }
+}
+@media (min-width:1024px){
+    .sectionHeadingText{
+        font-size: 40px;
+    }
+}
