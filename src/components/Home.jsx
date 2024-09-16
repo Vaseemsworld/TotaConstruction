@@ -9,16 +9,16 @@ const Home = () => {
     <>
       <section>
         <div className="hero-section">
-          <img src="images/hero-image.jpg" alt="hero.jpg" />
+          <img src="/images/hero-image.jpg" alt="hero.jpg" />
           <div className="hero-content">
             <div className="renover-logo">
-              <img src="images/logo-hero.png" alt="renover-logo.png" />
+              <img src="/images/logo-hero.png" alt="renover-logo" />
             </div>
             <p>The Best Construction Solutions</p>
             <div className="heading">
-              <div className="hero-corner"></div>
-              <h1>DREAM & BUILD</h1>
               <div className="corner-left"></div>
+              <h1>DREAM & BUILD</h1>
+              <div className="corner-right"></div>
             </div>
             <Link to="/about" className="btn">
               DISCOVER MORE
@@ -32,7 +32,7 @@ const Home = () => {
           <div className="container">
             <div className="introItems">
               <div className="img">
-                <img src="images/jcb.jpg" alt="jcb.jpg" />
+                <img src="/images/jcb.jpg" alt="jcb.jpg" />
               </div>
               <div className="content">
                 <div className="heading">
@@ -94,7 +94,7 @@ const Home = () => {
               <div className="item">
                 <div className="item-img">
                   <img
-                    src="images/hero-image.jpg"
+                    src="/images/hero-image.jpg"
                     alt="highway construction.jpg"
                   />
                 </div>
@@ -106,7 +106,7 @@ const Home = () => {
               <div className="item">
                 <div className="item-img">
                   <img
-                    src="images/demolition-home.avif"
+                    src="/images/demolition-home.avif"
                     alt="house demolition.avif"
                   />
                 </div>
@@ -118,7 +118,7 @@ const Home = () => {
               <div className="item">
                 <div className="item-img">
                   <img
-                    src="images/hero-image.jpg"
+                    src="/images/hero-image.jpg"
                     alt="foundation grading.jpg"
                   />
                 </div>
@@ -139,7 +139,7 @@ const Home = () => {
           <div className="container">
             <div className="whyChooseUsContent">
               <div className="worker-img">
-                <img src="images/worker.jpg" alt="worker.png" />
+                <img src="/images/worker.jpg" alt="worker.png" />
               </div>
               <div className="content">
                 <div className="headings">
@@ -157,9 +157,9 @@ const Home = () => {
                     efficient home construction and excavation projects.
                   </p>
                 </div>
-                <div className="btn">
-                  <Link to="/services">LEARN MORE</Link>
-                </div>
+                <Link to="/services" className="btn">
+                  LEARN MORE
+                </Link>
               </div>
             </div>
           </div>

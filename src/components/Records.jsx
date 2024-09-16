@@ -20,7 +20,7 @@ const Records = () => {
             <div className={styles.box}>
               <div className={styles.boxItem1}>
                 <div className={styles.boxImage}>
-                  <img src="images/counter-icon-1.png" alt="icon1.png" />
+                  <img src="/images/counter-icon-1.png" alt="icon1.png" />
                 </div>
               </div>
               <div className={styles.boxItem2}>
@@ -37,7 +37,7 @@ const Records = () => {
             <div className={styles.box}>
               <div className={styles.boxItem1}>
                 <div className={styles.boxImage}>
-                  <img src="images/counter-icon-2.png" alt="icon2.png" />
+                  <img src="/images/counter-icon-2.png" alt="icon2.png" />
                 </div>
               </div>
               <div className={styles.boxItem2}>
@@ -54,7 +54,7 @@ const Records = () => {
             <div className={styles.box}>
               <div className={styles.boxItem1}>
                 <div className={styles.boxImage}>
-                  <img src="images/counter-icon-3.png" alt="icon3.png" />
+                  <img src="/images/counter-icon-3.png" alt="icon3.png" />
                 </div>
               </div>
               <div className={styles.boxItem2}>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaPhone, FaMessage, FaLocationDot } from "react-icons/fa6";
 import { FaTimes, FaBars, FaAngleDoubleRight } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
 
 const Header = () => {
@@ -53,19 +53,19 @@ const Header = () => {
               </p>
             </li>
           </ul>
-          <a href="/contact" className={styles.navButton}>
+          <Link to="/contact" className={styles.navButton}>
             <span className={styles.btnContent}>
               <span className={styles.icon}>
                 <FaAngleDoubleRight />
               </span>
               Hire Us
             </span>
-          </a>
+          </Link>
         </div>
         <div className={styles.navMain}>
           <div className={styles.logoImg}>
             <img
-              src="images/logo.png"
+              src="/images/logo.png"
               alt="Tota Cons.png"
               className={styles.logo}
             />

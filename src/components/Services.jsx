@@ -22,7 +22,7 @@ const Services = () => {
             <div className={styles.serviceColumns}>
               <div className={styles.serviceColumn}>
                 <div className={styles.columnImg}>
-                  <img src="images/road-construction.avif" alt="image.avif" />
+                  <img src="/images/road-construction.avif" alt="image.avif" />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -36,7 +36,7 @@ const Services = () => {
               </div>
               <div className={styles.serviceColumn}>
                 <div className={styles.columnImg}>
-                  <img src="images/road-construction.avif" alt="image.avif" />
+                  <img src="/images/road-construction.avif" alt="image.avif" />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -50,7 +50,7 @@ const Services = () => {
               </div>
               <div className={styles.serviceColumn}>
                 <div className={styles.columnImg}>
-                  <img src="images/road-construction.avif" alt="image.avif" />
+                  <img src="/images/road-construction.avif" alt="image.avif" />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -66,7 +66,7 @@ const Services = () => {
             <div className={styles.serviceColumns}>
               <div className={styles.serviceColumn}>
                 <div className={styles.columnImg}>
-                  <img src="images/road-construction.avif" alt="image.avif" />
+                  <img src="/images/road-construction.avif" alt="image.avif" />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -80,7 +80,7 @@ const Services = () => {
               </div>
               <div className={styles.serviceColumn}>
                 <div className={styles.columnImg}>
-                  <img src="images/road-construction.avif" alt="image.avif" />
+                  <img src="/images/road-construction.avif" alt="image.avif" />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -94,7 +94,7 @@ const Services = () => {
               </div>
               <div className={styles.serviceColumn}>
                 <div className={styles.columnImg}>
-                  <img src="images/road-construction.avif" alt="image.avif" />
+                  <img src="/images/road-construction.avif" alt="image.avif" />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaPhone } from "react-icons/fa6";
 import styles from "./Footer.module.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className={styles.sections}>
         <div className={styles.section} id="about">
           <div className={styles.logo}>
-            <img src="images/logo.png" alt="logo" className={styles.img} />
+            <img src="/images/logo.png" alt="logo" className={styles.img} />
             <h1 className={styles.companyName}>TOTA CONSTRUCTION</h1>
           </div>
           <p className={styles.description}>
@@ -29,52 +30,52 @@ const Footer = () => {
         <div className={styles.section} id="links">
           <h2 className={styles.sectionTitle}>LINKS</h2>
           <p>
-            <a href="/services" className={styles.footerLink}>
+            <Link to="/services" className={styles.footerLink}>
               Our Service
-            </a>
+            </Link>
           </p>
           <p>
-            <a href="/about" className={styles.footerLink}>
+            <Link to="/about" className={styles.footerLink}>
               Projects
-            </a>
+            </Link>
           </p>
           <p>
-            <a href="/about" className={styles.footerLink}>
+            <Link to="/about" className={styles.footerLink}>
               About
-            </a>
+            </Link>
           </p>
           <p>
-            <a href="/contact" className={styles.footerLink}>
+            <Link to="/contact" className={styles.footerLink}>
               Contact Us
-            </a>
+            </Link>
           </p>
         </div>
         <div className={styles.section} id="services">
           <h2 className={styles.sectionTitle}>SERVICES</h2>
           <p>
-            <a href="#" className={styles.footerLink}>
+            <Link to="contact" className={styles.footerLink}>
               Home Construction
-            </a>
+            </Link>
           </p>
           <p>
-            <a href="#" className={styles.footerLink}>
+            <Link to="contact" className={styles.footerLink}>
               Industrial Construction
-            </a>
+            </Link>
           </p>
           <p>
-            <a href="#" className={styles.footerLink}>
+            <Link to="contact" className={styles.footerLink}>
               Highway Construction
-            </a>
+            </Link>
           </p>
           <p>
-            <a href="#" className={styles.footerLink}>
+            <Link to="contact" className={styles.footerLink}>
               Excavator Works
-            </a>
+            </Link>
           </p>
           <p>
-            <a href="#" className={styles.footerLink}>
+            <Link to="contact" className={styles.footerLink}>
               Bricks & Gravel Delivery
-            </a>
+            </Link>
           </p>
         </div>
         <div className={styles.section} id="contact-info">
@@ -98,7 +99,7 @@ const Footer = () => {
         <div className={styles.footerBottom}>
           <p className={styles.rights}>
             &copy; Copyrights are Reserved by{" "}
-            <a href="#" className={styles.rightsLink}>
+            <a href="/" className={styles.siteLink}>
               TotaConstruction.com
             </a>
           </p>

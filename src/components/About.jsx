@@ -16,7 +16,7 @@ const About = () => {
         <section className={classNames(styles.section, styles.introSection)}>
           <div className={styles.container}>
             <div className={styles.introImg}>
-              <img src="images/massive-jcb.avif" alt="intro.jpg" />
+              <img src="/images/massive-jcb.avif" alt="intro.jpg" />
             </div>
             <div className={styles.contentContainer}>
               <div className={styles.content}>
@@ -81,7 +81,7 @@ const About = () => {
               <div className={styles.feedbackColumns}>
                 <div className={styles.feedbackColumn}>
                   <div className={styles.personImg}>
-                    <img src="images/feedbackperson1.jpeg" alt="image.jpg" />
+                    <img src="/images/feedbackperson1.jpeg" alt="image.jpg" />
                   </div>
                   <div className={styles.feedbackData}>
                     <p className={styles.feedbackDataText}>
@@ -103,7 +103,7 @@ const About = () => {
                 </div>
                 <div className={styles.feedbackColumn}>
                   <div className={styles.personImg}>
-                    <img src="images/feedbackperson2.jpeg" alt="image.jpeg" />
+                    <img src="/images/feedbackperson2.jpeg" alt="image.jpeg" />
                   </div>
                   <div className={styles.feedbackData}>
                     <p className={styles.feedbackDataText}>
@@ -123,7 +123,7 @@ const About = () => {
                 </div>
                 <div className={styles.feedbackColumn}>
                   <div className={styles.personImg}>
-                    <img src="images/feedbackperson3.jpeg" alt="image.jpeg" />
+                    <img src="/images/feedbackperson3.jpeg" alt="image.jpeg" />
                   </div>
                   <div className={styles.feedbackData}>
                     <p className={styles.feedbackDataText}>
