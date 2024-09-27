@@ -1,6 +1,6 @@
 import React from "react";
-import classNames from "classnames";
 import styles from "./Contact.module.css";
+import classNames from "classnames";
 import TitleSection from "./TitleSection";
 import { FaPhone } from "react-icons/fa";
 import { FaLocationDot, FaMessage } from "react-icons/fa6";
@@ -48,6 +48,9 @@ const Contact = () => {
                 styles.section2Column
               )}
             >
+              <div className={styles.heading}>
+                <h2>CONTACT INFO</h2>
+              </div>
               <div className={classNames(styles.phoneColumn, styles.column)}>
                 <div className={styles.columnContent}>
                   <i className={styles.icon}>
@@ -82,7 +85,7 @@ const Contact = () => {
             >
               <div className={styles.form}>
                 <div className={styles.formHeading}>
-                  <h3 className={styles.formHeadingText}>Get In Touch</h3>
+                  <h2>Get In Touch</h2>
                 </div>
                 <form action="#" method="POST">
                   <div className={styles.group}>

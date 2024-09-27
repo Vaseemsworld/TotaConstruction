@@ -22,6 +22,20 @@ body {
     margin: 0;
 }
 
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
 .container{
     max-width: 1200px;
     margin: auto;
@@ -367,6 +381,7 @@ a{
     position: relative;
     padding: 20px;
     min-width: 250px;
+    opacity: 0;
 }
 
 .why-choose-us .worker-img img {
@@ -384,6 +399,7 @@ a{
     left: 20%;
     padding: 30px; 
     z-index: 1;
+    opacity: 0;
      
 }
 

@@ -4,7 +4,10 @@ import styles from "./About.module.css";
 import TitleSection from "./TitleSection";
 import Records from "./Records";
 import Team from "./Team";
+import AnimationOnScroll from "./Animation";
+
 const About = () => {
+  AnimationOnScroll();
   return (
     <>
       <div className={styles.about}>
@@ -15,10 +18,12 @@ const About = () => {
         <hr className={styles.divider} />
         <section className={classNames(styles.section, styles.introSection)}>
           <div className={styles.container}>
-            <div className={styles.introImg}>
+            <div className={`${styles.introImg} slideRight animateOnScroll`}>
               <img src="/images/massive-jcb.avif" alt="intro.webp" />
             </div>
-            <div className={styles.contentContainer}>
+            <div
+              className={`${styles.contentContainer} slideLeft animateOnScroll`}
+            >
               <div className={styles.content}>
                 <div className={styles.sectionTitle}>
                   <h6 className={styles.sectionTitleText}>OUR INTRODUCTION</h6>
@@ -47,7 +52,10 @@ const About = () => {
         <hr className={styles.divider} />
         <Records />
         <hr className={styles.divider} />
-        <section className={classNames(styles.section, styles.ownerSection)}>
+        <section
+          className={`${classNames(styles.section, styles.ownerSection)}
+        zoomIn animationOnScroll`}
+        >
           <div className={styles.ownerSectionContent}>
             <div className={styles.container}>
               <div className={styles.heading}>

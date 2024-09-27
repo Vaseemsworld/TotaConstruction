@@ -3,27 +3,9 @@ import { Link } from "react-router-dom";
 import { FaBuilding, FaPeopleGroup } from "react-icons/fa6";
 import Records from "./Records";
 import Team from "./Team";
-
+import AnimationOnScroll from "./Animation";
 const Home = () => {
-  useEffect(() => {
-    const elements = document.querySelectorAll(".animate-on-scroll");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.2,
-      }
-    );
-    elements.forEach((element) => {
-      observer.observe(element);
-    });
-  }, []);
+  AnimationOnScroll();
 
   return (
     <>
@@ -31,18 +13,18 @@ const Home = () => {
         <div className="hero-section">
           <img src="/images/hero-image.webp" alt="hero.webp" />
           <div className="hero-content">
-            <div className="renover-logo fadeInDown animate-on-scroll">
+            <div className="renover-logo fadeInDown animateOnScroll">
               <img src="/images/logo-hero.png" alt="renover-logo" />
             </div>
-            <p className="fadeInDown animate-on-scroll">
+            <p className="fadeInDown animateOnScroll">
               The Best Construction Solutions
             </p>
-            <div className="heading fadeInUp animate-on-scroll">
+            <div className="heading fadeInUp animateOnScroll">
               <div className="corner-left"></div>
               <h1>DREAM & BUILD</h1>
               <div className="corner-right"></div>
             </div>
-            <Link to="/about" className="btn fadeInUp animate-on-scroll">
+            <Link to="/about" className="btn fadeInUp animateOnScroll">
               DISCOVER MORE
             </Link>
           </div>
@@ -53,10 +35,10 @@ const Home = () => {
         <div className="intro-container">
           <div className="container">
             <div className="introItems">
-              <div className="img slideRight animate-on-scroll">
+              <div className="img slideRight animateOnScroll">
                 <img src="/images/jcb.webp" alt="jcb.webp" />
               </div>
-              <div className="content slideLeft animate-on-scroll">
+              <div className="content slideLeft animateOnScroll">
                 <div className="heading">
                   <h3 className="sectiontitle">Get To Know Us</h3>
                   <h1 className="sectionHeadingText">
@@ -113,7 +95,7 @@ const Home = () => {
               <h1 className="sectionHeadingText">RECENT PROJECTS</h1>
             </div>
             <div className="items">
-              <div className="item fadeInUp animate-on-scroll">
+              <div className="item fadeInUp animateOnScroll">
                 <div className="item-img">
                   <img
                     src="/images/hero-image.webp"
@@ -125,7 +107,7 @@ const Home = () => {
                   <h2>HIGHWAY CONSTRUCTION</h2>
                 </div>
               </div>
-              <div className="item fadeInUp animate-on-scroll">
+              <div className="item fadeInUp animateOnScroll">
                 <div className="item-img">
                   <img
                     src="/images/demolition-home.avif"
@@ -137,7 +119,7 @@ const Home = () => {
                   <h2>HOUSE DEMOLITION</h2>
                 </div>
               </div>
-              <div className="item fadeInUp animate-on-scroll">
+              <div className="item fadeInUp animateOnScroll">
                 <div className="item-img">
                   <img
                     src="/images/hero-image.webp"
@@ -160,10 +142,10 @@ const Home = () => {
         <div className="why-choose-us">
           <div className="container">
             <div className="whyChooseUsContent">
-              <div className="worker-img slideRight animate-on-scroll">
+              <div className="worker-img slideRight animateOnScroll">
                 <img src="/images/worker.webp" alt="worker.png" />
               </div>
-              <div className="content slideLeft animate-on-scroll">
+              <div className="content slideLeft animateOnScroll">
                 <div className="headings">
                   <h3 className="sectiontitle">WHY CHOOSE US</h3>
                   <h1 className="sectionHeadingText">
