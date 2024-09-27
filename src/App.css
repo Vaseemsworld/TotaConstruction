@@ -68,11 +68,11 @@ h1,h2,h3,h4,h5,h6{
     color: var(--secondary-color);
     display: inline-block;
 }
-.sectionHeading{
-    margin: 0;
-    padding: 10px 0 20px 0 ;
-    font-size: 24px;
-    font-weight: 600;
+.sectionHeadingText{
+    font-weight: bold;
+    font-size: 29px;
+    margin: 0 0 20px 0;
+    color: var(--text-color-dark);
 }
 .divider {
     margin: 10px 20px;
@@ -147,23 +147,19 @@ a{
 }
 
 .hero-content .renover-logo {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
 }
-
-.hero-content .heading {
-    display: flex;
-}
-
 .hero-content p {
     font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
-.hero-content .heading {
+.hero-content .heading{
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     position: relative;
+    width: auto;
 }
 .hero-content .corner-left, .hero-content .corner-right{
     position: absolute;
@@ -207,6 +203,7 @@ a{
     position: relative;
     min-height: 1px;
     display: flex;
+    opacity: 0;
 }
 .intro-container .content {
     justify-content: center;
@@ -273,13 +270,13 @@ a{
     padding: 30px 0;
 }
 
-.projectSection .sectionHeading{
+.projectSection .sectionHeadingText{
     color: var(--text-color-light);
 }
 
 .projectSection .headings {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .projectSection .item h2{
     padding: 10px 0;
@@ -300,6 +297,7 @@ a{
     overflow: hidden;
     border-radius: 8px;
     transition: transform 0.3s ease;
+    opacity: 0;
 }
 .projectSection .item:hover{
     transform: scale(1.05);
@@ -347,7 +345,7 @@ a{
 }
 
 .projectSection .text h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
  /* why choose us */
@@ -368,6 +366,7 @@ a{
     height: 80%;
     position: relative;
     padding: 20px;
+    min-width: 250px;
 }
 
 .why-choose-us .worker-img img {
@@ -382,8 +381,7 @@ a{
     height: calc(100% - 20%);
     position: absolute;
     top: 20%;
-    left: 65%;
-    transform: translateX(-50%);
+    left: 20%;
     padding: 30px; 
     z-index: 1;
      
@@ -401,8 +399,14 @@ a{
     }
 }
 @media (max-width: 768px) {
+    .hero-section .heading{
+        font-size: 29px;
+    }
     .introItems{
         flex-direction: column-reverse;
+    }
+    .introItems .img{
+        padding: 10px;
     }
     .intro-container .content {
         flex-direction: column;
@@ -471,6 +475,9 @@ a{
     }
     .sectionHeading{
         font-size: 20px;
+    }
+    .hero-section .heading, .sectionHeadingText{
+        font-size: 24px;
     }
     .hero-content .btn {
         padding: 10px 9px;

@@ -14,10 +14,10 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    padding: 50px 10px;
+    padding: 30px 10px;
 }
 .heading{
-    font-size: 29px;
+    font-size: 24px;
 }
 .description{
     padding: 10px;
@@ -43,6 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 10px 30px 10px;
 }
 .section2Column{
     width: 50%;
@@ -54,15 +55,18 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(218, 0, 120);
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 .contactDetails .column{
     padding: 10px;
+    margin-bottom: 20px;
     width: 50%;
     min-width: 170px;
     word-break: break-all;
+    border: 1px solid black;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+
 }
 .contactDetails .columnContent{
     width: 100%;
@@ -78,6 +82,7 @@
 }
 .contactDetails .icon{
     font-size: 24px;
+    color: #fff;
 }
 .email .address{
     word-wrap: break-word;
@@ -86,7 +91,7 @@
 
 
 .contactForm{
-    background-color: black;
+    background-color: grey;
     text-align: center;
     z-index: 1;
 }
@@ -100,6 +105,7 @@
 }
 .group{
     margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 .group input,.group .messageArea{
     min-width: 100%;
@@ -117,22 +123,28 @@
     background-color: #ff6620;
     padding: 10px 30px;
     font-size: 16px;
-    color: #000;
+    color: #fff;
     border-radius: 4px;
     transition: background-color 0.4s ease;
 }
 .form .btn:hover{
-    background-color: #fff;
+    background-color: #ff6720bc;
     
 }
 
 
 
 @media (max-width:767px){
+    .contactInfo .heading{
+        font-size: 20px;
+    }
     .container{
         flex-direction: column; 
     }
     .section2Column{
         width: 100%;
+    }
+    .contactForm{
+        margin-top: 30px;
     }
 }

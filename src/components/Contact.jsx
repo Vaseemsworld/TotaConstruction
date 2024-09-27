@@ -3,7 +3,7 @@ import classNames from "classnames";
 import styles from "./Contact.module.css";
 import TitleSection from "./TitleSection";
 import { FaPhone } from "react-icons/fa";
-import { FaLocationPin, FaMessage } from "react-icons/fa6";
+import { FaLocationDot, FaMessage } from "react-icons/fa6";
 const Contact = () => {
   return (
     <>
@@ -20,10 +20,10 @@ const Contact = () => {
               </div>
               <div className={styles.description}>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
-                  repellat sequi maiores rerum voluptatibus accusantium ea.
-                  Illum fuga distinctio, dignissimos architecto ea tempora iste
-                  quam vero, blanditiis porro, perspiciatis dicta!
+                  Get in touch with our team for inquiries, quotes, or support.
+                  Use the contact form, call us, or visit our office. Find us on
+                  Google Maps for directions and connect with us through social
+                  media for updates and additional information.
                 </p>
               </div>
               <div className={styles.map}>
@@ -69,7 +69,7 @@ const Contact = () => {
               <div className={classNames(styles.addressColumn, styles.column)}>
                 <div className={styles.columnContent}>
                   <i className={styles.icon}>
-                    <FaLocationPin />
+                    <FaLocationDot />
                   </i>
                   <span className={styles.address}>
                     NEAR NAMAN HOTEL, 200FT ROAD, ALWAR, RAJ. (301001)
@@ -121,7 +121,7 @@ const Contact = () => {
                     ></textarea>
                     <div className={styles.error}></div>
                   </div>
-                  <div className={styles.group}>
+                  <div className={styles.button}>
                     <button type="submit" className={styles.btn}>
                       SUBMIT
                     </button>

@@ -1,28 +1,32 @@
 import React from "react";
-import styles from "./Services.module.css";
+import styles from "./Projects.module.css";
 import TitleSection from "./TitleSection";
-const Services = () => {
+const Projects = () => {
   return (
     <>
-      <div className={styles.services}>
-        <TitleSection
-          title={"Services"}
-          description={"Provide Safe & Quality Services"}
-        />
+      <TitleSection
+        title={"Projects"}
+        description={
+          "Delivering Safe and Quality Projects with Precision and Excellence"
+        }
+      />
+      <div className={styles.projects}>
         <section className={styles.section}>
           <div className={styles.container}>
             <div className={styles.sectionHeadings}>
               <div className={styles.sectionTitle}>
-                <h6 className={styles.sectionTitleText}>OUR SERVICES</h6>
+                <h6 className={styles.sectionTitleText}>
+                  Explore Our Projects
+                </h6>
               </div>
               <div className={styles.sectionheading}>
-                <h2 className={styles.sectionHeadingText}>WHAT WE OFFER</h2>
+                <h2 className={styles.sectionHeadingText}>RECENT PROJECTS</h2>
               </div>
             </div>
-            <div className={styles.serviceColumns}>
-              <div className={styles.serviceColumn}>
+            <div className={styles.projectColumns}>
+              <div className={styles.projectColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/craftsmanship.webp" alt="image" />
+                  <img src="/images/hero-image.webp" alt="image" />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -35,9 +39,9 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.serviceColumn}>
+              <div className={styles.projectColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/real-state.webp" alt="image" />
+                  <img src="/images/demolition-home.avif" alt="image" />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -50,9 +54,9 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.serviceColumn}>
+              <div className={styles.projectColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/uit-work.webp" alt="image" />
+                  <img src="/images/road-construction.avif" alt="image" />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -66,14 +70,14 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.serviceColumns}>
-              <div className={styles.serviceColumn}>
+            <div className={styles.projectColumns}>
+              <div className={styles.projectColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/excavation-work.webp" alt="image" />
+                  <img src="/images/road-construction.avif" alt="image" />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
-                    <h2>EXCAVATION SERVICES</h2>
+                    <h2>EXCAVATION PROJECTS</h2>
                   </div>
                   <div className={styles.columnDescription}>
                     Our excavation services include site preparation, land
@@ -83,7 +87,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.serviceColumn}>
+              <div className={styles.projectColumn}>
                 <div className={styles.columnImg}>
                   <img src="/images/jcb-road-construction.webp" alt="image" />
                 </div>
@@ -99,7 +103,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.serviceColumn}>
+              <div className={styles.projectColumn}>
                 <div className={styles.columnImg}>
                   <img src="/images/jcb-tractor.webp" alt="image" />
                 </div>
@@ -123,4 +127,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Projects;

@@ -16,7 +16,7 @@ const About = () => {
         <section className={classNames(styles.section, styles.introSection)}>
           <div className={styles.container}>
             <div className={styles.introImg}>
-              <img src="/images/massive-jcb.avif" alt="intro.jpg" />
+              <img src="/images/massive-jcb.avif" alt="intro.webp" />
             </div>
             <div className={styles.contentContainer}>
               <div className={styles.content}>
@@ -30,11 +30,13 @@ const About = () => {
                 </div>
                 <div className={styles.description}>
                   <p className={styles.descriptiontext}>
-                    We are a team of experienced professionals who have been
-                    working in the construction industry for many years. Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                    nostrum nemo sunt magni fugit molestias pariatur, nulla
-                    maiores possimus quasi.
+                    Our construction company specializes in providing
+                    high-quality building materials such as bricks, cement,
+                    gravel, and soil. We offer services including excavator,
+                    JCB, and tractor rentals, and handle real estate projects,
+                    road construction, and city cleaning in partnership with
+                    UIT. With a focus on reliability, we build infrastructure
+                    that lasts.
                   </p>
                 </div>
               </div>
@@ -81,7 +83,7 @@ const About = () => {
               <div className={styles.feedbackColumns}>
                 <div className={styles.feedbackColumn}>
                   <div className={styles.personImg}>
-                    <img src="/images/feedbackperson1.jpeg" alt="image.jpg" />
+                    <img src="/images/feedbackperson1.webp" alt="image.webp" />
                   </div>
                   <div className={styles.feedbackData}>
                     <p className={styles.feedbackDataText}>
@@ -103,7 +105,7 @@ const About = () => {
                 </div>
                 <div className={styles.feedbackColumn}>
                   <div className={styles.personImg}>
-                    <img src="/images/feedbackperson2.jpeg" alt="image.jpeg" />
+                    <img src="/images/feedbackperson2.webp" alt="image.webp" />
                   </div>
                   <div className={styles.feedbackData}>
                     <p className={styles.feedbackDataText}>
@@ -123,7 +125,7 @@ const About = () => {
                 </div>
                 <div className={styles.feedbackColumn}>
                   <div className={styles.personImg}>
-                    <img src="/images/feedbackperson3.jpeg" alt="image.jpeg" />
+                    <img src="/images/feedbackperson3.webp" alt="image.webp" />
                   </div>
                   <div className={styles.feedbackData}>
                     <p className={styles.feedbackDataText}>

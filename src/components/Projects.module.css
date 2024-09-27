@@ -4,7 +4,7 @@
     --text-color-dark:#000;
     --text-color-grey:grey;
 }
-.services{
+.projects{
     background-color: #f2f3f6;
 }
 .container {
@@ -42,15 +42,15 @@
     margin: 0 0 20px 0;
     color: var(--text-color-dark);
 }
-.serviceContent{
+.projectContent{
     padding: 10px;
 }
 
-.serviceColumns{
+.projectColumns{
     display: flex;
     justify-content: space-evenly;
 }
-.serviceColumn{
+.projectColumn{
     max-width: 400px;
     margin: 10px 20px 10px 10px;
     background-color: #fff;
@@ -59,24 +59,24 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     transition: box-shadow 0.3s ease;
 }
-.serviceColumn:hover{
+.projectColumn:hover{
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
-.serviceColumn .columnImg{
+.projectColumn .columnImg{
     height: auto;
     width: 100%;
     padding: 0;margin: 0;
     display: inline-block;
 }
-.serviceColumn .columnImg img{
+.projectColumn .columnImg img{
     height: 100%;
     width: 100%;
     aspect-ratio: 1/1;
 }
-.serviceColumn .columnData{
+.projectColumn .columnData{
     padding: 25px 10px 25px 10px;
 }
-.serviceColumn h2{
+.projectColumn h2{
     font-weight: 400;
 }
 .columnData .columnHeading{
@@ -94,11 +94,11 @@
 }
 
 @media (max-width:767px){
-    .serviceColumns{
+    .projectColumns{
         flex-direction: column;
         align-items: center;
     }
-    .serviceColumn{
+    .projectColumn{
         width: 100%;
         margin: 30px 10px;
     }
