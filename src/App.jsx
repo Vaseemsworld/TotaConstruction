@@ -36,7 +36,7 @@ function App() {
     } else {
       document.addEventListener("DOMContentLoaded", handleLoad);
     }
-    return () => window.removeEventListener("DOMContentLoaded", handleLoad);
+    return () => document.removeEventListener("DOMContentLoaded", handleLoad);
   }, []);
   return (
     <>
