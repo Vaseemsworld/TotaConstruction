@@ -19,7 +19,10 @@ const About = () => {
         <section className={classNames(styles.section, styles.introSection)}>
           <div className={styles.container}>
             <div className={`${styles.introImg} slideRight animateOnScroll`}>
-              <img src="/images/massive-jcb.avif" alt="intro.webp" />
+              <img
+                src="https://ik.imagekit.io/hyrppbheqc/images/massive-jcb.avif"
+                alt="image"
+              />
             </div>
             <div
               className={`${styles.contentContainer} slideLeft animateOnScroll`}
@@ -91,7 +94,10 @@ const About = () => {
               <div className={styles.feedbackColumns}>
                 <div className={styles.feedbackColumn}>
                   <div className={styles.personImg}>
-                    <img src="/images/feedbackperson1.webp" alt="image.webp" />
+                    <img
+                      src="https://ik.imagekit.io/hyrppbheqc/images/feedbackperson1.webp"
+                      alt="image"
+                    />
                   </div>
                   <div className={styles.feedbackData}>
                     <p className={styles.feedbackDataText}>
@@ -113,7 +119,10 @@ const About = () => {
                 </div>
                 <div className={styles.feedbackColumn}>
                   <div className={styles.personImg}>
-                    <img src="/images/feedbackperson2.webp" alt="image.webp" />
+                    <img
+                      src="https://ik.imagekit.io/hyrppbheqc/images/feedbackperson2.webp"
+                      alt="image"
+                    />
                   </div>
                   <div className={styles.feedbackData}>
                     <p className={styles.feedbackDataText}>
@@ -133,7 +142,10 @@ const About = () => {
                 </div>
                 <div className={styles.feedbackColumn}>
                   <div className={styles.personImg}>
-                    <img src="/images/feedbackperson3.webp" alt="image.webp" />
+                    <img
+                      src="https://ik.imagekit.io/hyrppbheqc/images/feedbackperson3.webp"
+                      alt="image"
+                    />
                   </div>
                   <div className={styles.feedbackData}>
                     <p className={styles.feedbackDataText}>

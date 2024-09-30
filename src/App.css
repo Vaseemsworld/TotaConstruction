@@ -182,13 +182,13 @@ a{
     background-size: cover;
 }
 .hero-content .corner-left {
-    background-image: url('/images/corner-left.png');
+    background-image: url('https://ik.imagekit.io/hyrppbheqc/images/corner-left.png');
     top: -15px;
     left: -25px;
 }
 
 .hero-content .corner-right {
-    background-image: url('/images/corner-right.png');
+    background-image: url('https://ik.imagekit.io/hyrppbheqc/images/corner-right.png');
     bottom: -10px;
     right: -20px;
 }

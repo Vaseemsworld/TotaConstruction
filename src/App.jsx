@@ -34,9 +34,9 @@ function App() {
     if (document.readyState === "complete") {
       handleLoad();
     } else {
-      document.addEventListener("DOMContentLoaded", handleLoad);
+      window.addEventListener("load", handleLoad);
     }
-    return () => document.removeEventListener("DOMContentLoaded", handleLoad);
+    return () => window.removeEventListener("load", handleLoad);
   }, []);
   return (
     <>

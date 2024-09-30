@@ -11,10 +11,16 @@ const Home = () => {
     <>
       <section>
         <div className="hero-section">
-          <img src="/images/hero-image.webp" alt="hero.webp" />
+          <img
+            src="https://ik.imagekit.io/hyrppbheqc/images/hero-image.webp"
+            alt="image"
+          />
           <div className="hero-content">
             <div className="renover-logo fadeInDown animateOnScroll">
-              <img src="/images/logo-hero.png" alt="renover-logo" />
+              <img
+                src="https://ik.imagekit.io/hyrppbheqc/images/logo-hero.png"
+                alt="image"
+              />
             </div>
             <p className="fadeInDown animateOnScroll">
               The Best Construction Solutions
@@ -36,7 +42,10 @@ const Home = () => {
           <div className="container">
             <div className="introItems">
               <div className="img slideRight animateOnScroll">
-                <img src="/images/jcb.webp" alt="jcb.webp" />
+                <img
+                  src="https://ik.imagekit.io/hyrppbheqc/images/jcb.webp"
+                  alt="image"
+                />
               </div>
               <div className="content slideLeft animateOnScroll">
                 <div className="heading">
@@ -98,8 +107,8 @@ const Home = () => {
               <div className="item fadeInUp animateOnScroll">
                 <div className="item-img">
                   <img
-                    src="/images/hero-image.webp"
-                    alt="highway construction.webp"
+                    src="https://ik.imagekit.io/hyrppbheqc/images/hero-image.webp"
+                    alt="image"
                   />
                 </div>
                 <div className="text">
@@ -110,8 +119,8 @@ const Home = () => {
               <div className="item fadeInUp animateOnScroll">
                 <div className="item-img">
                   <img
-                    src="/images/demolition-home.avif"
-                    alt="house demolition.avif"
+                    src="https://ik.imagekit.io/hyrppbheqc/images/demolition-home.avif"
+                    alt="image"
                   />
                 </div>
                 <div className="text">
@@ -122,8 +131,8 @@ const Home = () => {
               <div className="item fadeInUp animateOnScroll">
                 <div className="item-img">
                   <img
-                    src="/images/hero-image.webp"
-                    alt="foundation grading.webp"
+                    src="https://ik.imagekit.io/hyrppbheqc/images/hero-image.webp"
+                    alt="image"
                   />
                 </div>
                 <div className="text">
@@ -143,7 +152,10 @@ const Home = () => {
           <div className="container">
             <div className="whyChooseUsContent">
               <div className="worker-img slideRight animateOnScroll">
-                <img src="/images/worker.webp" alt="worker.png" />
+                <img
+                  src="https://ik.imagekit.io/hyrppbheqc/images/worker.webp"
+                  alt="image"
+                />
               </div>
               <div className="content slideLeft animateOnScroll">
                 <div className="headings">

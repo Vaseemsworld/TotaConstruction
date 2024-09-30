@@ -19,7 +19,10 @@ const Team = () => {
           <div className={styles.teamMembers}>
             <div className={styles.member}>
               <div className={styles.memberImg}>
-                <img src="/images/founder.webp" alt="liyakatkhan.webp" />
+                <img
+                  src="https://ik.imagekit.io/hyrppbheqc/images/founder.webp"
+                  alt="liyakatkhan.webp"
+                />
               </div>
               <div className={styles.memberContent}>
                 <div className={styles.memberInfo}>
@@ -46,7 +49,10 @@ const Team = () => {
             </div>
             <div className={styles.member}>
               <div className={styles.memberImg}>
-                <img src="/images/founder.webp" alt="liyakatkhan.webp" />
+                <img
+                  src="https://ik.imagekit.io/hyrppbheqc/images/founder.webp"
+                  alt="liyakatkhan.webp"
+                />
               </div>
               <div className={styles.memberContent}>
                 <div className={styles.memberInfo}>

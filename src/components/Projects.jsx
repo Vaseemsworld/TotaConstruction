@@ -26,7 +26,10 @@ const Projects = () => {
             <div className={styles.projectColumns}>
               <div className={styles.projectColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/hero-image.webp" alt="image" />
+                  <img
+                    src="https://ik.imagekit.io/hyrppbheqc/images/hero-image.webp"
+                    alt="image"
+                  />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -41,7 +44,10 @@ const Projects = () => {
               </div>
               <div className={styles.projectColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/demolition-home.avif" alt="image" />
+                  <img
+                    src="https://ik.imagekit.io/hyrppbheqc/images/demolition-home.avif"
+                    alt="image"
+                  />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -56,7 +62,10 @@ const Projects = () => {
               </div>
               <div className={styles.projectColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/road-construction.avif" alt="image" />
+                  <img
+                    src="https://ik.imagekit.io/hyrppbheqc/images/road-construction.avif"
+                    alt="image"
+                  />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -73,7 +82,10 @@ const Projects = () => {
             <div className={styles.projectColumns}>
               <div className={styles.projectColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/road-construction.avif" alt="image" />
+                  <img
+                    src="https://ik.imagekit.io/hyrppbheqc/images/road-construction.avif"
+                    alt="image"
+                  />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -89,7 +101,10 @@ const Projects = () => {
               </div>
               <div className={styles.projectColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/jcb-road-construction.webp" alt="image" />
+                  <img
+                    src="https://ik.imagekit.io/hyrppbheqc/images/jcb-road-construction.webp"
+                    alt="image"
+                  />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -105,7 +120,10 @@ const Projects = () => {
               </div>
               <div className={styles.projectColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/jcb-tractor.webp" alt="image" />
+                  <img
+                    src="https://ik.imagekit.io/hyrppbheqc/images/jcb-tractor.webp"
+                    alt="image"
+                  />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>

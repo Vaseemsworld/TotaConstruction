@@ -22,7 +22,10 @@ const Services = () => {
             <div className={styles.serviceColumns}>
               <div className={styles.serviceColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/craftsmanship.webp" alt="image" />
+                  <img
+                    src="https://ik.imagekit.io/hyrppbheqc/images/craftsmanship.webp"
+                    alt="image"
+                  />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -37,7 +40,10 @@ const Services = () => {
               </div>
               <div className={styles.serviceColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/real-state.webp" alt="image" />
+                  <img
+                    src="https://ik.imagekit.io/hyrppbheqc/images/real-state.webp"
+                    alt="image"
+                  />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -52,7 +58,10 @@ const Services = () => {
               </div>
               <div className={styles.serviceColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/uit-work.webp" alt="image" />
+                  <img
+                    src="https://ik.imagekit.io/hyrppbheqc/images/uit-work.webp"
+                    alt="image"
+                  />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -69,7 +78,10 @@ const Services = () => {
             <div className={styles.serviceColumns}>
               <div className={styles.serviceColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/excavation-work.webp" alt="image" />
+                  <img
+                    src="https://ik.imagekit.io/hyrppbheqc/images/excavation-work.webp"
+                    alt="image"
+                  />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -85,7 +97,10 @@ const Services = () => {
               </div>
               <div className={styles.serviceColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/jcb-road-construction.webp" alt="image" />
+                  <img
+                    src="https://ik.imagekit.io/hyrppbheqc/images/jcb-road-construction.webp"
+                    alt="image"
+                  />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
@@ -101,7 +116,10 @@ const Services = () => {
               </div>
               <div className={styles.serviceColumn}>
                 <div className={styles.columnImg}>
-                  <img src="/images/jcb-tractor.webp" alt="image" />
+                  <img
+                    src="https://ik.imagekit.io/hyrppbheqc/images/jcb-tractor.webp"
+                    alt="image"
+                  />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>

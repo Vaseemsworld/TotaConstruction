@@ -9,7 +9,11 @@ const Footer = () => {
       <div className={styles.sections}>
         <div className={styles.section} id="about">
           <div className={styles.logo}>
-            <img src="/images/logo.png" alt="logo" className={styles.img} />
+            <img
+              src="https://ik.imagekit.io/hyrppbheqc/images/logo.png"
+              alt="logo"
+              className={styles.img}
+            />
             <h1 className={styles.companyName}>TOTA CONSTRUCTION</h1>
           </div>
           <p className={styles.description}>
