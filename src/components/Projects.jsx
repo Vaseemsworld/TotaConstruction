@@ -63,7 +63,7 @@ const Projects = () => {
               <div className={styles.projectColumn}>
                 <div className={styles.columnImg}>
                   <img
-                    src="https://ik.imagekit.io/hyrppbheqc/images/road-construction.avif"
+                    src="https://ik.imagekit.io/hyrppbheqc/images/uit-work.webp"
                     alt="image"
                   />
                 </div>
@@ -83,7 +83,7 @@ const Projects = () => {
               <div className={styles.projectColumn}>
                 <div className={styles.columnImg}>
                   <img
-                    src="https://ik.imagekit.io/hyrppbheqc/images/road-construction.avif"
+                    src="https://ik.imagekit.io/hyrppbheqc/images/excavation-work.webp"
                     alt="image"
                   />
                 </div>

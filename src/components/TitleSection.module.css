@@ -34,3 +34,12 @@
     padding-left: 15px;
     border-left: 2px solid #ff6620;
 }
+
+@media (max-width:480px){
+   .content .title .titleText{
+      font-size: 38px;
+   }
+   .content .description .descriptionText{
+      font-size: 18px;
+   }
+}

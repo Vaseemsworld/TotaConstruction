@@ -56,7 +56,7 @@ const Contact = () => {
                   <i className={styles.icon}>
                     <FaPhone />
                   </i>
-                  <span className={styles.phoneNumber}>+91 1234567890</span>
+                  <span className={styles.phoneNumber}>+91 9214149999</span>
                 </div>
               </div>
               <div className={classNames(styles.emailColumn, styles.column)}>
