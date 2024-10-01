@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <section>
-        <div className="hero-section">
+        <div className="hero-section ">
           <img
             src="https://ik.imagekit.io/hyrppbheqc/images/hero-image.webp"
             alt="image"

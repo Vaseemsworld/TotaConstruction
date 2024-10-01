@@ -13,13 +13,19 @@ const AnimationOnScroll = () => {
         });
       },
       {
-        threshold: 0.2,
+        threshold: 0.5,
       }
     );
     elements.forEach((element) => {
       observer.observe(element);
     });
+    return () => {
+      elements.forEach((element) => {
+        observer.unobserve(element);
+      });
+    };
   }, []);
+  return null;
 };
 
 export default AnimationOnScroll;

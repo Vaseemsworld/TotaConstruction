@@ -17,6 +17,7 @@
     padding: 10px;
     margin: auto;
     max-width: 1200px;
+    opacity: 0;
  }
  
  .content .title .titleText{

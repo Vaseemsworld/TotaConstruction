@@ -55,12 +55,9 @@ const About = () => {
         <hr className={styles.divider} />
         <Records />
         <hr className={styles.divider} />
-        <section
-          className={`${classNames(styles.section, styles.ownerSection)}
-        zoomIn animationOnScroll`}
-        >
+        <section className={classNames(styles.section, styles.ownerSection)}>
           <div className={styles.ownerSectionContent}>
-            <div className={styles.container}>
+            <div className={`${styles.container} zoomIn animateOnScroll`}>
               <div className={styles.heading}>
                 <h2 className={styles.headingText}>LOCALLY OWNED & OPERATED</h2>
               </div>
@@ -92,7 +89,9 @@ const About = () => {
                 </div>
               </div>
               <div className={styles.feedbackColumns}>
-                <div className={styles.feedbackColumn}>
+                <div
+                  className={`${styles.feedbackColumn} slideRight animateOnScroll`}
+                >
                   <div className={styles.personImg}>
                     <img
                       src="https://ik.imagekit.io/hyrppbheqc/images/feedbackperson1.webp"
@@ -117,7 +116,9 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.feedbackColumn}>
+                <div
+                  className={`${styles.feedbackColumn} slideRight animateOnScroll`}
+                >
                   <div className={styles.personImg}>
                     <img
                       src="https://ik.imagekit.io/hyrppbheqc/images/feedbackperson2.webp"
@@ -140,7 +141,9 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.feedbackColumn}>
+                <div
+                  className={`${styles.feedbackColumn} slideRight animateOnScroll`}
+                >
                   <div className={styles.personImg}>
                     <img
                       src="https://ik.imagekit.io/hyrppbheqc/images/feedbackperson3.webp"

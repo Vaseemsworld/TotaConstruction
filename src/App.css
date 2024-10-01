@@ -211,6 +211,7 @@ a{
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow-x: hidden;
 }
 .intro-container .content, .intro-container .img{
     width: 100%;
