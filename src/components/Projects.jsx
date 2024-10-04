@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Projects.module.css";
 import TitleSection from "./TitleSection";
-import AnimationOnScroll from "./Animation";
+
 const Projects = () => {
   return (
     <>

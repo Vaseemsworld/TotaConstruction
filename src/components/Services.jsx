@@ -41,7 +41,7 @@ const Services = () => {
               <div className={styles.serviceColumn}>
                 <div className={styles.columnImg}>
                   <img
-                    src="https://ik.imagekit.io/hyrppbheqc/images/real-state.webp"
+                    src="https://ik.imagekit.io/hyrppbheqc/images/real-estate.webp"
                     alt="image"
                   />
                 </div>
