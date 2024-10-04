@@ -1,10 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Contact.module.css";
 import classNames from "classnames";
 import TitleSection from "./TitleSection";
-import { FaPhone } from "react-icons/fa";
-import { FaLocationDot, FaMessage } from "react-icons/fa6";
+import { FaPhone, FaLocationDot, FaMessage } from "react-icons/fa6";
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formStatus, setFormStatus] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbwRkSljqxafJgnc2AWU_0P5gK0wdxwzz44z1Dn2WF9dSQ_qsXPZVIaB5nvHFmDGzYNm/exec";
+    fetch(scriptURL, {
+      method: "POST",
+      body: JSON.stringify(formData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => {
+        setIsSubmitting(false);
+        setFormStatus("Success! Your message has been sent.");
+        setFormData({ name: "", phone: "", email: "", message: "" });
+      })
+      .catch((error) => {
+        setIsSubmitting(false);
+        setFormStatus("Error! Something went wrong.");
+        console.log("Error!", error.message);
+      });
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
   return (
     <>
       <div className={styles.contact}>
@@ -40,6 +77,7 @@ const Contact = () => {
             </div>
           </div>
         </section>
+
         <section className={styles.contactSection2}>
           <div className={styles.container}>
             <div
@@ -80,6 +118,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+
             <div
               className={classNames(styles.contactForm, styles.section2Column)}
             >
@@ -87,12 +126,14 @@ const Contact = () => {
                 <div className={styles.formHeading}>
                   <h2>Get In Touch</h2>
                 </div>
-                <form action="#" method="POST">
+                <form onSubmit={handleSubmit}>
                   <div className={styles.group}>
                     <input
                       type="text"
                       id="name"
                       name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       placeholder="Name*"
                       className={styles.input}
                       required
@@ -103,6 +144,9 @@ const Contact = () => {
                     <input
                       type="tel"
                       id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
                       placeholder="Phone*"
                       className={styles.input}
                       required
@@ -113,22 +157,35 @@ const Contact = () => {
                     <input
                       type="email"
                       id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       placeholder="Email"
                       className={styles.input}
                     />
                   </div>
                   <div className={styles.group}>
                     <textarea
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
                       placeholder="Message"
                       className={styles.messageArea}
                     ></textarea>
                     <div className={styles.error}></div>
                   </div>
                   <div className={styles.button}>
-                    <button type="submit" className={styles.btn}>
-                      SUBMIT
+                    <button
+                      type="submit"
+                      className={styles.btn}
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? "Submitting..." : "SUBMIT"}
                     </button>
                   </div>
+                  {formStatus && (
+                    <p className={styles.formStatus}>{formStatus}</p>
+                  )}
                 </form>
               </div>
             </div>

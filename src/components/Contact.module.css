@@ -85,7 +85,7 @@
     flex-direction: column;
     border-radius: 8px;
     color: #000;
-
+    font-weight: bold;
 }
 .contactDetails .icon{
     font-size: 24px;
