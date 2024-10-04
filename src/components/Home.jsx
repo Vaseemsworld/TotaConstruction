@@ -75,6 +75,9 @@ const Home = () => {
                     From durable bricks, JCBs for digging, to tractors for
                     transporting bricks or soil, we supply everything needed for
                     efficient home construction and excavation projects.
+                    Additionally, we offer real estate services, helping clients
+                    buy or sell plots, making us a one-stop solution for all
+                    your construction and property needs.
                   </p>
                 </div>
               </div>
@@ -166,11 +169,13 @@ const Home = () => {
                 </div>
                 <div className="description">
                   <p>
-                    We are a reliable construction company specializing in
-                    providing high-quality building materials and equipment.
-                    From durable bricks, JCBs for digging, to tractors for
-                    transporting bricks or soil, we supply everything needed for
-                    efficient home construction and excavation projects.
+                    We provide top-quality building materials and reliable
+                    equipment for all your construction needs. With an
+                    experienced team, we ensure timely, efficient project
+                    completion. Plus, we offer trusted real estate services for
+                    buying and selling plots, giving you complete support from
+                    start to finish. Choose us for excellence and reliability in
+                    every project.
                   </p>
                 </div>
                 <Link to="/services" className="btn">

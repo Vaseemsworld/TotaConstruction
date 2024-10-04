@@ -13,7 +13,7 @@ const About = () => {
       <div className={styles.about}>
         <TitleSection
           title={"About"}
-          description={"Experienced In The Industry For Over 33 Years"}
+          description={"Experienced In The Industry For More Than 3 Decade"}
         />
         <hr className={styles.divider} />
         <section className={classNames(styles.section, styles.introSection)}>
@@ -41,10 +41,12 @@ const About = () => {
                     Our construction company specializes in providing
                     high-quality building materials such as bricks, cement,
                     gravel, and soil. We offer services including excavator,
-                    JCB, and tractor rentals, and handle real estate projects,
-                    road construction, and city cleaning in partnership with
-                    UIT. With a focus on reliability, we build infrastructure
-                    that lasts.
+                    JCB, and tractor rentals, and we handle real estate
+                    projects, road construction, and city cleaning in
+                    partnership with UIT. Additionally, we assist clients in
+                    buying and selling plots, making us a comprehensive solution
+                    for all your construction and real estate needs. With a
+                    focus on reliability, we build infrastructure that lasts.
                   </p>
                 </div>
               </div>
@@ -90,7 +92,7 @@ const About = () => {
               </div>
               <div className={styles.feedbackColumns}>
                 <div
-                  className={`${styles.feedbackColumn} slideRight animateOnScroll`}
+                  className={`${styles.feedbackColumn} fadeInUp animateOnScroll`}
                 >
                   <div className={styles.personImg}>
                     <img
@@ -102,22 +104,21 @@ const About = () => {
                     <p className={styles.feedbackDataText}>
                       "Outstanding performance by the workers, using high-grade
                       materials. The project was completed on time with
-                      remarkable attention to detail."
+                      remarkable attention to detail. Highly satisfied with
+                      their service."
                     </p>
                   </div>
                   <div className={styles.personInfo}>
                     <div className={styles.name}>
-                      <h6 className={styles.nameText}>
-                        PRIYA RATHOD (Advocate)
-                      </h6>
+                      <h6 className={styles.nameText}>PRIYA RATHOD</h6>
                     </div>
                     <div className={styles.service}>
-                      <h6 className={styles.serviceText}>Building Materials</h6>
+                      <h6 className={styles.serviceText}>Chief Enginner UIT</h6>
                     </div>
                   </div>
                 </div>
                 <div
-                  className={`${styles.feedbackColumn} slideRight animateOnScroll`}
+                  className={`${styles.feedbackColumn} fadeInUp animateOnScroll`}
                 >
                   <div className={styles.personImg}>
                     <img
@@ -127,9 +128,10 @@ const About = () => {
                   </div>
                   <div className={styles.feedbackData}>
                     <p className={styles.feedbackDataText}>
-                      "Exceptional quality of materials and workmanship. The
-                      team worked efficiently and finished the job on time.
-                      Highly recommended for construction projects."
+                      "I had a fantastic experience with their real estate
+                      service! They helped me find the perfect plot, providing
+                      guidance and support every step of the way. Highly
+                      recommend!"
                     </p>
                   </div>
                   <div className={styles.personInfo}>
@@ -137,12 +139,12 @@ const About = () => {
                       <h6 className={styles.nameText}>LOKESH PRAJAPAT</h6>
                     </div>
                     <div className={styles.service}>
-                      <h6 className={styles.serviceText}>Road Construction</h6>
+                      <h6 className={styles.serviceText}>Real Estate Broker</h6>
                     </div>
                   </div>
                 </div>
                 <div
-                  className={`${styles.feedbackColumn} slideRight animateOnScroll`}
+                  className={`${styles.feedbackColumn} fadeInUp animateOnScroll`}
                 >
                   <div className={styles.personImg}>
                     <img
@@ -152,9 +154,10 @@ const About = () => {
                   </div>
                   <div className={styles.feedbackData}>
                     <p className={styles.feedbackDataText}>
-                      "Excellent excavation work! The operators were experienced
-                      and completed the job efficiently, leaving the site
-                      prepared perfectly. Highly satisfied with their service."
+                      "We're thrilled to have worked with your team. Their
+                      professionalism, friendliness, and ability to deliver
+                      exceptional results make them highly recommended for any
+                      construction project."
                     </p>
                   </div>
                   <div className={styles.personInfo}>
@@ -162,7 +165,7 @@ const About = () => {
                       <h6 className={styles.nameText}>JAVED HUSSAIN</h6>
                     </div>
                     <div className={styles.service}>
-                      <h6 className={styles.serviceText}>Excavator Work</h6>
+                      <h6 className={styles.serviceText}>Contractor</h6>
                     </div>
                   </div>
                 </div>

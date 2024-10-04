@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Projects.module.css";
 import TitleSection from "./TitleSection";
+import AnimationOnScroll from "./Animation";
 const Projects = () => {
   return (
     <>
@@ -24,16 +25,18 @@ const Projects = () => {
               </div>
             </div>
             <div className={styles.projectColumns}>
-              <div className={styles.projectColumn}>
+              <div
+                className={`${styles.projectColumn} animateOnScroll fadeInUp`}
+              >
                 <div className={styles.columnImg}>
                   <img
-                    src="https://ik.imagekit.io/hyrppbheqc/images/hero-image.webp"
+                    src="https://ik.imagekit.io/hyrppbheqc/images/real-estate-project.webp"
                     alt="image"
                   />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
-                    <h2>BUILDING MATERIALS SUPPLY</h2>
+                    <h2>REAL ESTATE</h2>
                   </div>
                   <div className={styles.columnDescription}>
                     We provide high-quality building materials, including
@@ -42,16 +45,18 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.projectColumn}>
+              <div
+                className={`${styles.projectColumn} animateOnScroll fadeInUp`}
+              >
                 <div className={styles.columnImg}>
                   <img
-                    src="https://ik.imagekit.io/hyrppbheqc/images/demolition-home.avif"
+                    src="https://ik.imagekit.io/hyrppbheqc/images/demolition-work.webp"
                     alt="image"
                   />
                 </div>
                 <div className={styles.columnData}>
                   <div className={styles.columnHeading}>
-                    <h2>REAL STATE</h2>
+                    <h2>HOUSE DEMOLITION</h2>
                   </div>
                   <div className={styles.columnDescription}>
                     We facilitate the purchase and sale of residential and
@@ -60,27 +65,9 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.projectColumn}>
-                <div className={styles.columnImg}>
-                  <img
-                    src="https://ik.imagekit.io/hyrppbheqc/images/uit-work.webp"
-                    alt="image"
-                  />
-                </div>
-                <div className={styles.columnData}>
-                  <div className={styles.columnHeading}>
-                    <h2>UIT WORKS</h2>
-                  </div>
-                  <div className={styles.columnDescription}>
-                    We collaborate with the Urban Improvement Trust (UIT) to
-                    execute public infrastructure projects, including building
-                    and maintaining roads, city cleaning, and drainage systems.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.projectColumns}>
-              <div className={styles.projectColumn}>
+              <div
+                className={`${styles.projectColumn} animateOnScroll fadeInUp`}
+              >
                 <div className={styles.columnImg}>
                   <img
                     src="https://ik.imagekit.io/hyrppbheqc/images/excavation-work.webp"
@@ -99,10 +86,12 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.projectColumn}>
+              <div
+                className={`${styles.projectColumn} animateOnScroll fadeInUp`}
+              >
                 <div className={styles.columnImg}>
                   <img
-                    src="https://ik.imagekit.io/hyrppbheqc/images/jcb-road-construction.webp"
+                    src="https://ik.imagekit.io/hyrppbheqc/images/road-construction.webp"
                     alt="image"
                   />
                 </div>
@@ -115,25 +104,6 @@ const Projects = () => {
                     roads, working with the latest equipment to build and
                     maintain roads for residential, commercial, and public
                     infrastructure projects, ensuring long-lasting quality.
-                  </div>
-                </div>
-              </div>
-              <div className={styles.projectColumn}>
-                <div className={styles.columnImg}>
-                  <img
-                    src="https://ik.imagekit.io/hyrppbheqc/images/jcb-tractor.webp"
-                    alt="image"
-                  />
-                </div>
-                <div className={styles.columnData}>
-                  <div className={styles.columnHeading}>
-                    <h2>MACHINERY RENTALS</h2>
-                  </div>
-                  <div className={styles.columnDescription}>
-                    We offer a range of heavy machinery for rent, including
-                    water tanks, JCBs, and tractors, to support various
-                    construction, excavation, and earth-moving projects,
-                    ensuring reliable performance and efficiency on-site.
                   </div>
                 </div>
               </div>

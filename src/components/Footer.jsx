@@ -34,8 +34,13 @@ const Footer = () => {
         <div className={styles.section} id="links">
           <h2 className={styles.sectionTitle}>LINKS</h2>
           <p>
+            <Link to="/" className={styles.footerLink}>
+              Home
+            </Link>
+          </p>
+          <p>
             <Link to="/services" className={styles.footerLink}>
-              Our Service
+              Our Services
             </Link>
           </p>
           <p>
