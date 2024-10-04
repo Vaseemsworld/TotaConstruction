@@ -17,8 +17,9 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbwRkSljqxafJgnc2AWU_0P5gK0wdxwzz44z1Dn2WF9dSQ_qsXPZVIaB5nvHFmDGzYNm/exec";
+      "https://script.google.com/macros/s/AKfycbxc-n_OmisK4FOtAI6TeE_H5J7nd5oSXkEuCEXPAEGosXFKPxSM5ROpiy0Yuk5LIdSJ/exec";
     fetch(scriptURL, {
       method: "POST",
       body: JSON.stringify(formData),
@@ -27,6 +28,12 @@ const Contact = () => {
       },
     })
       .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
         setIsSubmitting(false);
         setFormStatus("Success! Your message has been sent.");
         setFormData({ name: "", phone: "", email: "", message: "" });
@@ -34,7 +41,7 @@ const Contact = () => {
       .catch((error) => {
         setIsSubmitting(false);
         setFormStatus("Error! Something went wrong.");
-        console.log("Error!", error.message);
+        console.error("Error during form submission:", error);
       });
   };
 
