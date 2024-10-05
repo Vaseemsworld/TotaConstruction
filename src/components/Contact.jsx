@@ -18,7 +18,8 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const scriptURL = "/.netlify/functions/submit-form";
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbxWT8AGrB5t6fXgbIw8w86R3L4lItnofMNe0snrgTmZBWV3YGFEBk9YNx3PKD_zkEkhzg/exec";
     fetch(scriptURL, {
       method: "POST",
       body: JSON.stringify(formData),
