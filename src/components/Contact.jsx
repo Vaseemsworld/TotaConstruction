@@ -19,7 +19,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbxc-n_OmisK4FOtAI6TeE_H5J7nd5oSXkEuCEXPAEGosXFKPxSM5ROpiy0Yuk5LIdSJ/exec";
+      "https://script.google.com/macros/s/AKfycbxWT8AGrB5t6fXgbIw8w86R3L4lItnofMNe0snrgTmZBWV3YGFEBk9YNx3PKD_zkEkhzg/exec";
     fetch(scriptURL, {
       method: "POST",
       body: JSON.stringify(formData),
