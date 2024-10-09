@@ -13,40 +13,54 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formStatus, setFormStatus] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbxWT8AGrB5t6fXgbIw8w86R3L4lItnofMNe0snrgTmZBWV3YGFEBk9YNx3PKD_zkEkhzg/exec";
-    fetch(scriptURL, {
-      method: "POST",
-      body: JSON.stringify(formData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setIsSubmitting(false);
-        setFormStatus("Success! Your message has been sent.");
-        setFormData({ name: "", phone: "", email: "", message: "" });
-      })
-      .catch((error) => {
-        setIsSubmitting(false);
-        setFormStatus("Error! Something went wrong.");
-        console.error("Error during form submission:", error);
-      });
-  };
+  const [error, setError] = useState({ phoneerror: "", emailerror: "" });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    const reEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const rePhone = /^[7-9][0-9]{9}$/;
+    setFormData({ ...formData, [name]: value });
+    if (name === "phone") {
+      if (!rePhone.test(value)) {
+        setError((prev) => ({ ...prev, phoneerror: "Enter Valid Number" }));
+      } else {
+        setError((prev) => ({ ...prev, phoneerror: "" }));
+      }
+    }
+    if (name === "email") {
+      if (!reEmail.test(value)) {
+        setError((prev) => ({ ...prev, emailerror: "Enter Valid Email" }));
+      } else {
+        setError((prev) => ({ ...prev, emailerror: "" }));
+      }
+    }
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setFormStatus("");
+    const data = new FormData(e.target);
+    try {
+      const response = await fetch("https://formspree.io/f/xovqazqa", {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+      if (response.ok) {
+        setFormStatus("Success!");
+        setFormData({ name: "", phone: "", email: "", message: "" });
+      } else {
+        setFormStatus("Failed! Try Again");
+      }
+    } catch (error) {
+      setFormStatus("Failed! Try Again");
+    }
+    setIsSubmitting(false);
+    setTimeout(() => {
+      setFormStatus("");
+    }, 5000);
   };
 
   return (
@@ -145,7 +159,6 @@ const Contact = () => {
                       className={styles.input}
                       required
                     />
-                    <div className={styles.error}></div>
                   </div>
                   <div className={styles.group}>
                     <input
@@ -158,7 +171,7 @@ const Contact = () => {
                       className={styles.input}
                       required
                     />
-                    <div className={styles.error}></div>
+                    <div className={styles.error}>{error.phoneerror}</div>
                   </div>
                   <div className={styles.group}>
                     <input
@@ -170,6 +183,7 @@ const Contact = () => {
                       placeholder="Email"
                       className={styles.input}
                     />
+                    <div className={styles.error}>{error.emailerror}</div>
                   </div>
                   <div className={styles.group}>
                     <textarea
@@ -179,7 +193,6 @@ const Contact = () => {
                       placeholder="Message"
                       className={styles.messageArea}
                     ></textarea>
-                    <div className={styles.error}></div>
                   </div>
                   <div className={styles.button}>
                     <button
@@ -190,9 +203,19 @@ const Contact = () => {
                       {isSubmitting ? "Submitting..." : "SUBMIT"}
                     </button>
                   </div>
-                  {formStatus && (
-                    <p className={styles.formStatus}>{formStatus}</p>
-                  )}
+                  <div className={styles.statusContainer}>
+                    {formStatus && (
+                      <p
+                        className={`${styles.formStatus} ${
+                          formStatus.includes("Success")
+                            ? styles.success
+                            : styles.failed
+                        }`}
+                      >
+                        {formStatus}
+                      </p>
+                    )}
+                  </div>
                 </form>
               </div>
             </div>
