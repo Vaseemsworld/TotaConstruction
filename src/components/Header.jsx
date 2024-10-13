@@ -65,7 +65,7 @@ const Header = () => {
         <div className={styles.navMain}>
           <div className={styles.logoImg}>
             <img
-              src="https://ik.imagekit.io/hyrppbheqc/images/logo.png"
+              src="https://ik.imagekit.io/hyrppbheqc/images/logo_img.png"
               alt="Tota Cons.png"
               className={styles.logo}
             />

@@ -39,9 +39,11 @@ const Projects = () => {
                     <h2>REAL ESTATE</h2>
                   </div>
                   <div className={styles.columnDescription}>
-                    We provide high-quality building materials, including
-                    bricks, cement, gravel, and soil, ensuring your construction
-                    projects are built with durable and reliable supplies.
+                    We recently completed a successful project involving the
+                    sale of a prime plot. This transaction not only showcases
+                    our expertise in the real estate market but also highlights
+                    our commitment to connecting buyers with valuable investment
+                    opportunities in sought-after locations.
                   </div>
                 </div>
               </div>
@@ -59,9 +61,14 @@ const Projects = () => {
                     <h2>HOUSE DEMOLITION</h2>
                   </div>
                   <div className={styles.columnDescription}>
-                    We facilitate the purchase and sale of residential and
-                    commercial plots, ensuring a seamless process and prime
-                    locations for development.
+                    Our expert team specializes in safe and efficient house
+                    demolition, ensuring minimal disruption to surrounding
+                    areas. We utilize advanced equipment and techniques to
+                    handle each project with precision, adhering to all safety
+                    regulations. Whether it's clearing the way for new
+                    construction or renovation, we provide comprehensive
+                    services, managing every aspect from planning to site
+                    cleanup.
                   </div>
                 </div>
               </div>
@@ -79,10 +86,12 @@ const Projects = () => {
                     <h2>EXCAVATION PROJECTS</h2>
                   </div>
                   <div className={styles.columnDescription}>
-                    Our excavation services include site preparation, land
-                    clearing, and earth-moving using advanced equipment like
-                    Tractors and JCBs, ensuring your project starts with a solid
-                    foundation.
+                    We recently completed a major excavation project, preparing
+                    the site for a new development. Our team utilized advanced
+                    machinery and techniques to ensure precise digging while
+                    prioritizing safety and efficiency. This project exemplifies
+                    our capability to handle complex excavation tasks, paving
+                    the way for future construction.
                   </div>
                 </div>
               </div>
@@ -100,10 +109,12 @@ const Projects = () => {
                     <h2>Road Construction</h2>
                   </div>
                   <div className={styles.columnDescription}>
-                    We specialize in constructing durable and well-planned
-                    roads, working with the latest equipment to build and
-                    maintain roads for residential, commercial, and public
-                    infrastructure projects, ensuring long-lasting quality.
+                    We successfully finished a road construction project that
+                    enhances accessibility and connectivity in the area. Our
+                    team employed modern techniques and durable materials to
+                    ensure a high-quality roadway. This project not only
+                    improves transportation but also supports local development
+                    and community growth.
                   </div>
                 </div>
               </div>

@@ -54,11 +54,14 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    
 }
 .footer .logo img {
-    width: 70px;
+    width: 100px;
     height: auto;
-    padding: 0 10px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 4px;
 }
 .footer .logo h1 {
     margin: 0;

@@ -10,7 +10,7 @@ const Footer = () => {
         <div className={styles.section} id="about">
           <div className={styles.logo}>
             <img
-              src="https://ik.imagekit.io/hyrppbheqc/images/logo.png"
+              src="https://ik.imagekit.io/hyrppbheqc/images/logo_img.png"
               alt="logo"
               className={styles.img}
             />

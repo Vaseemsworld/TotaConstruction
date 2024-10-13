@@ -62,7 +62,7 @@
 }
 .zoomIn.animate{
     opacity: 0;
-    animation: zoomIn 1s ease-out forwards;
+    animation: zoomIn 1.5s ease-out forwards;
 }
 .loader{
     height: 60px;
@@ -71,7 +71,7 @@
     border-top: 5px solid var(--primary-color);
     border-bottom: 5px solid var(--primary-color);
     border-radius: 50%;
-    animation: spin 1s linear infinite;
+    animation: spin 1.5s linear infinite;
 }
 .preloader.fadeOut{
     opacity: 0;
@@ -79,17 +79,17 @@
 }
 .fadeInDown.animate{
     opacity: 0;
-    animation: fadeInDown 1s ease-out forwards;
+    animation: fadeInDown 1.5s ease-out forwards;
 }
 .fadeInUp.animate{
     opacity: 0;
-    animation: fadeInUp 1s ease-out forwards;
+    animation: fadeInUp 1.5s ease-out forwards;
 }
 .slideRight.animate{
     opacity: 0;
-    animation: slideRight 1s ease-out forwards;
+    animation: slideRight 1.5s ease-out forwards;
 }
 .slideLeft.animate{
     opacity: 0;
-    animation: slideLeft 1s ease-out forwards;
+    animation: slideLeft 1.5s ease-out forwards;
 }

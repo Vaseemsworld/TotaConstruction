@@ -107,42 +107,48 @@ const Home = () => {
               <h1 className="sectionHeadingText">RECENT PROJECTS</h1>
             </div>
             <div className="items">
-              <div className="item fadeInUp animateOnScroll">
-                <div className="item-img">
-                  <img
-                    src="https://ik.imagekit.io/hyrppbheqc/images/hero-image.webp"
-                    alt="image"
-                  />
+              <Link to="/projects">
+                <div className="item fadeInUp animateOnScroll">
+                  <div className="item-img">
+                    <img
+                      src="https://ik.imagekit.io/hyrppbheqc/images/real-estate-project.webp"
+                      alt="image"
+                    />
+                  </div>
+                  <div className="text">
+                    <div className="type">COMMERCIAL</div>
+                    <h2>REAL ESTATE</h2>
+                  </div>
                 </div>
-                <div className="text">
-                  <div className="type">COMMERCIAL</div>
-                  <h2>HIGHWAY CONSTRUCTION</h2>
+              </Link>
+              <Link to="/projects">
+                <div className="item fadeInUp animateOnScroll">
+                  <div className="item-img">
+                    <img
+                      src="https://ik.imagekit.io/hyrppbheqc/images/demolition-home.avif"
+                      alt="image"
+                    />
+                  </div>
+                  <div className="text">
+                    <div className="type">RESIDENTIAL</div>
+                    <h2>HOUSE DEMOLITION</h2>
+                  </div>
                 </div>
-              </div>
-              <div className="item fadeInUp animateOnScroll">
-                <div className="item-img">
-                  <img
-                    src="https://ik.imagekit.io/hyrppbheqc/images/demolition-home.avif"
-                    alt="image"
-                  />
+              </Link>
+              <Link to="/projects">
+                <div className="item fadeInUp animateOnScroll">
+                  <div className="item-img">
+                    <img
+                      src="https://ik.imagekit.io/hyrppbheqc/images/hero-image.webp"
+                      alt="image"
+                    />
+                  </div>
+                  <div className="text">
+                    <div className="type">COMMERCIAL</div>
+                    <h2>FOUNDATION GRADING</h2>
+                  </div>
                 </div>
-                <div className="text">
-                  <div className="type">RESIDENTIAL</div>
-                  <h2>HOUSE DEMOLITION</h2>
-                </div>
-              </div>
-              <div className="item fadeInUp animateOnScroll">
-                <div className="item-img">
-                  <img
-                    src="https://ik.imagekit.io/hyrppbheqc/images/hero-image.webp"
-                    alt="image"
-                  />
-                </div>
-                <div className="text">
-                  <div className="type">COMMERCIAL</div>
-                  <h2>FOUNDATION GRADING</h2>
-                </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

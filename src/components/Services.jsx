@@ -50,9 +50,11 @@ const Services = () => {
                     <h2>REAL STATE</h2>
                   </div>
                   <div className={styles.columnDescription}>
-                    We facilitate the purchase and sale of residential and
-                    commercial plots, ensuring a seamless process and prime
-                    locations for development.
+                    We specialize in buying and selling plots in prime
+                    locations, offering tailored solutions for residential and
+                    commercial development. Our dedicated team ensures a
+                    seamless experience, guiding clients through every step of
+                    the process for successful investments.
                   </div>
                 </div>
               </div>
