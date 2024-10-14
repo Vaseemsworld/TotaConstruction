@@ -14,12 +14,14 @@ const Home = () => {
           <img
             src="https://ik.imagekit.io/hyrppbheqc/images/hero-image.webp"
             alt="image"
+            loading="lazy"
           />
           <div className="hero-content">
             <div className="renover-logo fadeInDown animateOnScroll">
               <img
                 src="https://ik.imagekit.io/hyrppbheqc/images/logo-hero.png"
                 alt="image"
+                loading="lazy"
               />
             </div>
             <p className="fadeInDown animateOnScroll">
@@ -45,6 +47,7 @@ const Home = () => {
                 <img
                   src="https://ik.imagekit.io/hyrppbheqc/images/jcb.webp"
                   alt="image"
+                  loading="lazy"
                 />
               </div>
               <div className="content slideLeft animateOnScroll">
@@ -113,6 +116,7 @@ const Home = () => {
                     <img
                       src="https://ik.imagekit.io/hyrppbheqc/images/real-estate-project.webp"
                       alt="image"
+                      loading="lazy"
                     />
                   </div>
                   <div className="text">
@@ -127,6 +131,7 @@ const Home = () => {
                     <img
                       src="https://ik.imagekit.io/hyrppbheqc/images/demolition-home.avif"
                       alt="image"
+                      loading="lazy"
                     />
                   </div>
                   <div className="text">

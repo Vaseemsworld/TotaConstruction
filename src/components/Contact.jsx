@@ -124,7 +124,7 @@ const Contact = () => {
                     <FaMessage />
                   </i>
                   <span className={styles.email}>
-                    TOTACONSTRUCTION@GMAIL.COM
+                    TOTACONSTRUCTIONS@GMAIL.COM
                   </span>
                 </div>
               </div>

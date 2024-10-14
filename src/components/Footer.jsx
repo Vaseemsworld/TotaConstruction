@@ -101,7 +101,7 @@ const Footer = () => {
           </div>
           <div className={styles.email}>
             <h4 className={styles.emailTitle}>SEND US EMAIL</h4>
-            <p className={styles.emailText}>contact@TotaConstruction.com</p>
+            <p className={styles.emailText}>totaconstructions@gmail.com</p>
           </div>
         </div>
         <hr className={styles.divider} />
