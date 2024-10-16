@@ -163,10 +163,12 @@ a{
 .hero-content .renover-logo {
     height: 80px;
     width: 80px;
+    opacity: 0;
 }
 .hero-content p {
     font-size: 1.5rem;
     margin-bottom: 30px;
+    opacity: 0;
 }
 
 .hero-content .heading{
@@ -174,6 +176,7 @@ a{
     margin-bottom: 30px;
     position: relative;
     width: auto;
+    opacity: 0;
 }
 .hero-content .corner-left, .hero-content .corner-right{
     position: absolute;
@@ -199,6 +202,7 @@ a{
 .hero-content .btn{
     border-right: 3px solid var(--text-color-light);
     border-bottom: 3px solid var(--text-color-light);
+    opacity: 0;
 }
 .hero-content .btn:hover {
     background-color: var(--text-color-light);
